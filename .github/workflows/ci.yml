@@ -1,0 +1,20 @@
+name: CI Pipeline
+
+on:
+  push:
+
+jobs:
+  test-job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo "Hello Tharun! CI Pipeline Running"
+
+      - name: Show Date
+        run: date
